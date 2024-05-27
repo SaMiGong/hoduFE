@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="hodu.css">
+</head>
+<body>
+<header>
+    <div class="top_nav">
+        <img src="Logo-fin.svg" alt="hoduLogo" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="" class="home">Home</a></li>
+                <li><a href="" class="About">About</a></li>
+                <li><a href="" class="Support">Support</a></li>
+            </ul>
+        </nav>
+    <input type="button" value="Download" class="download_one">
+    </div>
+    <div>
+        <h2>Lorem Ipsum is simply <br>
+        dummy text of the printing and</h2>
+        <h4>Lorem Ipsum is simply dummy text of the printing and <br>
+        typesetting industry. <br>
+        Lorem Ipsum has been the industry's standard dummy text <br>
+        ever since the 1500s, when an unknown</h4>
+        <input type="button" value="Download" class="download_two">
+        <img src="img_cat_png.png" alt="boxHatCat" class="boxCat">
+    </div>
+</header>
+
+<main>
+    <div>
+        <img src="img_4.png" alt="lyingCat" class="bedCat">
+        <div class="column">
+            <h3>Lorem Ipsum is simply<br>
+            dummy text of the printing<br>and dummy text</h3>
+            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        </div>
+    </div>
+    <h2>dummy text of the printing and dummy</h2>
+    <h4>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</h4>
+
+    <article>
+        <ul class="img_row">
+            <li><img src="img_1.png" alt="CatTowerCat"></li>
+            <li><img src="img_2.png" alt="backCat"></li>
+            <li><img src="img_3.png" alt="frontCat"></li>
+            <li><img src="img_1%20(1).png" alt="staringCat"></li>
+            <li><img src="img_2%20(1).png" alt="upStaringCat"></li>
+            <li><img src="img_3%20(1).png" alt="yawnCat"></li>
+        </ul>
+        <ul class="more_img"></ul>
+    </article>
+
+    <p>Continue exploring HODU</p>
+    <button class="show_more">show more</button>
+    <hr>
+
+    <div class="map_text">
+        <h2>Where you'll be</h2>
+        <h4>330, cheomden-ro, Jeju-si, Jeju-do, Republic of Korea</h4>
+    </div>
+
+    <div id="map" style="width: 1278px; height: 520px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d6bf6ef18646f75711da1cd8c4365a08"></script>
+    <script type="text/javascript">
+        const mapContainer = document.getElementById('map'), // 지도를 표시할 div
+            mapOption = {
+                center: new kakao.maps.LatLng(33.442237, 126.571474), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        const map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 지도를 클릭한 위치에 표출할 마커입니다
+        const marker = new kakao.maps.Marker({
+            // 지도 중심좌표에 마커를 생성합니다
+            position: map.getCenter()
+        });
+        // 지도에 마커를 표시합니다
+        marker.setMap(map);
+    </script>
+    <div class="asd">
+        <div class="mail">
+            <h2>Subscribe to our Blog post</h2>
+            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text </h4>
+            <article>
+                <img src="mail.png" alt="mailEmoticon">
+                <input type="text" name="" class="inpMail" value="" placeholder="Enter your e-mail address">
+                <button id="show">Subscribe</button>
+            </article>
+        </div>
+        <img src="img_5%20(1).png" alt="backgroundCat" class="backgroundCat">
+    </div>
+
+    <div class="background">
+        <div class="window">
+            <div class="popup">
+                <img src="cat%201.png" alt="catHead" class="catHead">
+                <h2>Thank you!</h2>
+                <h4>Lorem Ipsum is simply dummy text of the printing industry.</h4>
+                <button id="close">OK! I Love HODU</button>
+                <img src="무제-1%201.png" alt="backgroundImg" class="backgroundImg">
+            </div>
+        </div>
+    </div>
+</main>
+
+<aside>
+    <a href=""><img src="scroll-top-btn%20(1).png" alt="tpTop" class="rollUp"></a>
+</aside>
+<footer>
+    <img src="Logo-fin.svg" alt="hodu logo">
+    <nav class="sns">
+        <ul>
+            <li><a href=""><img src="icon-blog.png" alt="blog"></a></li>
+            <li><a href=""><img src="icon-insta.png" alt="instar"></a></li>
+            <li><a href=""><img src="icon-facebook.png" alt="facebook"></a></li>
+            <li><a href=""><img src="icon-youtube.png" alt="youtube"></a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="hodu.js"></script>
+</body>
+</html>
