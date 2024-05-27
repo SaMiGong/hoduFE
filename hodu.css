@@ -340,6 +340,9 @@ article > button:hover{
     background-color: #D97652; /* 박스 바탕색 설정 */
     color: #FFFFFF; /* 글자 색 설정 */
 }
+#close:hover {
+    opacity: 0.5;
+}
 
 .rollUp{
     position: fixed;
