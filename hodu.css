@@ -135,12 +135,13 @@ main > h4 {
     list-style-type: none; /* 앞에 붙는 점 없애기 */
     grid-template-columns: 378px 378px 378px;
     gap: 72px;
-    margin: 0px 0px 100px 320px;
+    margin: 0px 0px 100px 340px;
 }
 .img-width img {
-    max-width: 438px;
-    height: 438px;
+    width: 378px;
+    height: 378px;
     border-radius: 30px;
+    filter: drop-shadow(6px 6px 10px gray);
 }
 main > p{
     width: 290px;
